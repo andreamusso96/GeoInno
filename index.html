@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>GeoInno 2024</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,8 +16,37 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-color="black">
+					<h3>
+					<span class="fragment highlight-blue"> Large cities </span> arise from <br> <span class="fragment highlight-blue"> fast urbanization </span> and <span class="fragment highlight-blue"> structural transformation </span>
+					</h3>
+					<br>
+					<br>
+					<span class="fragment"> Andrea Musso, Dirk Helbing and Frank Neffke </span>
+				</section>
+				<section data-background-iframe="assets/zipf_us_cities.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black">What causes <span class="fragment"> differences in the distribution of city sizes </span>   <span class="fragment"> across geographic regions? </span></section>
+				<section data-background-image="assets/data_desc/Slide1.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide2.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide3.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide4.jpeg"> </section>
+				<section data-background-iframe="assets/cities.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black">
+					\[S_{t+1} = \gamma_t S_{t} \]
+					<span class="fragment">
+						\[ \ \ \ \ \ \log(\gamma_t) \sim N(\mu_t, \sigma_t) \]
+					</span>
+				</section>
+				<section data-background-image="assets/data_desc/Slide5.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide6.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide7.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide8.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide9.jpeg"> </section>
+				<section data-background-image="assets/data_desc/Slide10.jpeg"> </section>
+				<section data-background-iframe="assets/mean_variance_square_plot.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black">End</section>
 			</div>
 		</div>
 
@@ -25,6 +54,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -33,7 +63,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
 			});
 		</script>
 	</body>
