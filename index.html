@@ -12,6 +12,27 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style type="text/css">
+			  .fragment.spotlight {
+				transform: translateY(100px);
+				  transform-origin: 0 0;
+			  }
+			  .fragment.spotlight.visible {
+				transform: none;
+				  color: #555
+			  }
+			  .fragment.spotlight.current-fragment {
+				transform: scale(1.5);
+				  color: white;
+			  }
+			  .box {
+				padding: 10px; /* Some padding inside the box */
+				box-sizing: border-box; /* To include padding in the box's width */
+				margin: 10px 0; /* Margin for spacing */
+				text-align: center; /* To center text inside the box */
+			  }
+
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -46,6 +67,14 @@
 				<section data-background-iframe="assets/mean_variance_square_plot.html"  data-background-interactive data-preload> </section>
 				<section data-background-iframe="assets/gibrat_mean.html"  data-background-interactive data-preload> </section>
 				<section data-background-iframe="assets/gibrat_std.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black"> <span class="fragment highlight-blue"> Differences in the distribution of city sizes </span> across regions are induced by
+					<div>
+					<ul>
+					  <li class="fragment spotlight">Pace of urbanization</li>
+					  <li class="fragment spotlight">Structural transformation</li>
+					</ul>
+					</div>
+				</section>
 				<section data-background-color="white">  <img width=62%, data-src="assets/qrcode.png" > </section>
 			</div>
 		</div>
