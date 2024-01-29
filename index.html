@@ -22,7 +22,7 @@
 				  color: #555
 			  }
 			  .fragment.spotlight.current-fragment {
-				transform: scale(1.5);
+				transform: scale(1.1);
 				  color: white;
 			  }
 			  .box {
@@ -39,25 +39,91 @@
 			<div class="slides">
 				<section data-background-color="black">
 					<h3>
-					<span class="fragment highlight-blue"> Large cities </span> arise from <br> <span class="fragment highlight-blue"> fast urbanization </span> and <span class="fragment highlight-blue"> structural transformation </span>
+						What explains differences in <span class="fragment highlight-blue"> concentration in large cities </span> ?
 					</h3>
 					<br>
 					<br>
 					<span class="fragment"> Andrea Musso, Dirk Helbing and Frank Neffke </span>
 				</section>
 				<section data-background-iframe="assets/zipf_us_cities.html"  data-background-interactive data-preload> </section>
-				<section data-background-color="black">What causes <span class="fragment"> differences in the distribution of city sizes </span>   <span class="fragment"> across geographic regions? </span></section>
-				<section data-background-image="assets/data_desc/Slide1.jpeg"> </section>
-				<section data-background-image="assets/data_desc/Slide2.jpeg"> </section>
-				<section data-background-image="assets/data_desc/Slide3.jpeg"> </section>
-				<section data-background-image="assets/data_desc/Slide4.jpeg"> </section>
-				<section data-background-iframe="assets/cities.html"  data-background-interactive data-preload> </section>
-				<section data-background-iframe="assets/zipf_continents.html"  data-background-interactive data-preload> </section>
-				<section data-background-iframe="assets/zipf_agri.html"  data-background-interactive data-preload> </section>
-				<section data-background-iframe="assets/zipf_services.html"  data-background-interactive data-preload> </section>
-				<section data-background-iframe="assets/zipf_raw_material_exporters.html"  data-background-interactive data-preload> </section>
-				<section data-background-iframe="assets/gibrat_mean.html"  data-background-interactive data-preload> </section>
-				<section data-background-iframe="assets/gibrat_std.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/zipf_plot_selected_countries.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/zipf_plot_continents.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black">
+					Some kind of <span class="fragment highlight-blue"> random growth process </span> generates <span class="fragment highlight-blue"> Zipf's law </span>
+					<span class="fragment">
+					\[S_{t+1} = \gamma_t S_{t} \]
+					</span>
+					<span class="fragment">
+						\[ \ \ \ \ \ \gamma_t \sim N(\mu_t, \sigma_t) \]
+					</span>
+					<span class="fragment">
+						<img src="assets/gabaix.png"  height="100">
+					</span>
+				</section>
+				<section data-background-color="black">
+					Differences in <span class="fragment highlight-blue"> Zipf exponents </span> are consequence of differences in <span class="fragment highlight-blue"> growth processes </span>
+				</section>
+				<section data-background-color="black">
+					<img src="assets/micheals.png"  height="300">
+					<img src="assets/rozenfeld.png"  height="100">
+				</section>
+				<section data-background-iframe="assets/gibrat_mean_ipums.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_ipums.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean_CHN.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_CHN.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean_NGA.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_NGA.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean_USA.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_USA.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean_DEU.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_DEU.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean_agri_service.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_agri_service.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black"> Four <span class="fragment highlight-blue"> stylized facts: </span>
+					<br>
+					<div>
+					<ul>
+					  <li class="fragment spotlight">Downward sloping growth rates pre-urbanization</li>
+					  <li class="fragment spotlight">Upward sloping growth rates during urbanization</li>
+					  <li class="fragment spotlight">Flat sloped growth rates post-urbanization</li>
+						<li class="fragment spotlight">Downward sloping variance</li>
+					</ul>
+					</div>
+				</section>
+				<section data-background-color="black">
+					<span class="fragment highlight-blue"> Structural differences </span> across sizes explain <span class="fragment highlight-blue"> growth rate differences </span>
+					<br>
+					<span class="fragment">
+					<img src="assets/micheals.png"  height="300">
+					</span>
+				</section>
+				<section data-background-iframe="assets/industry_shares_by_size_1850.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/industry_shares_by_size_1880.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/industry_shares_by_size_1910.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/industry_shares_by_size_1930.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black">
+					<span class="fragment highlight-blue"> Structural differences </span> across sizes explain <span class="fragment highlight-blue"> growth rate differences </span>
+					<span class="fragment">
+					\[\gamma_c = \sum_i s_{ic} \gamma_{ic} \]
+					</span>
+					<span class="fragment">
+					\[\hat{\gamma}_c = \sum_i s_{ic} \gamma_{i} \]
+					</span>
+				</section>
+				<section data-background-iframe="assets/growth_vs_growth_forecast_1850.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/growth_vs_growth_forecast_1880.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/growth_vs_growth_forecast_1910.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/growth_vs_growth_forecast_1930.html"  data-background-interactive data-preload> </section>
+				<section data-background-color="black">
+					<span class="fragment"> How do these stylized facts </span>  <span class="fragment"> about <span class="fragment highlight-blue"> growth rate differences </span> across sizes </span> <span class="fragment"> explain <span class="fragment highlight-blue"> differences in Zipf Exponents? </span> </span>
+				</section>
+				<section data-background-iframe="assets/zipf_plot_ipums.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/zipf_plot_exponent_evolution_CHN.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/zipf_exponent_evolution.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/countries_by_zipf_exponent.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_mean_comparison_usa_china.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/gibrat_std_comparison_usa_china.html"  data-background-interactive data-preload> </section>
+				<section data-background-iframe="assets/zipf_plot_comparison_usa_china.html"  data-background-interactive data-preload> </section>
 			</div>
 		</div>
 
